@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="15dp" >
+
+            <ImageView
+                android:id="@+id/Image_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="10dp"
+                android:src="@drawable/username" />
+
+            <com.liao.custom.MyEditText
+                android:id="@+id/usernumber"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                inputType="phone"
+                android:background="@null"
+                android:hint="您的学号"
+                android:paddingLeft="50dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="20sp" >
+            </com.liao.custom.MyEditText>
+
+            <ImageView
+                android:id="@+id/user_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:paddingRight="20dp"
+                android:src="@drawable/delete_selector"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="15dp" >
+
+            <ImageView
+                android:id="@+id/Image_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="10dp"
+                android:src="@drawable/userpassword" />
+
+            <com.liao.custom.MyEditText
+                android:id="@+id/userpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:paddingLeft="50dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="20sp" >
+            </com.liao.custom.MyEditText>
+
+            <ImageView
+                android:id="@+id/password_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:paddingRight="20dp"
+                android:src="@drawable/delete_selector"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/id_login"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_type"
+                android:height="45dp"
+                android:text="登录"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/id_zhuce"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/id_login"
+                android:background="@drawable/button_type2"
+                android:text="注册"
+                android:textColor="#88d35400"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

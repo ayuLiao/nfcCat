@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下去的时候 -->
+    <item android:drawable="@drawable/sign_in" android:state_pressed="true"/>
+    <!-- 焦点停留 -->
+    <item android:drawable="@drawable/sign_in1" android:state_focused="true"/>
+    <item android:drawable="@drawable/sign_in1" android:state_pressed="false"/>
+
+</selector>

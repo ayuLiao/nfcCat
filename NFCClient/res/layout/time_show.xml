@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:liao="http://schemas.android.com/apk/res/com.liao.nfcclient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/time_background"
+    android:id="@+id/time_back" >
+
+    <ListView
+        android:id="@+id/time_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none" >
+    </ListView>
+
+    <include layout="@layout/time_choose" />
+"
+
+</RelativeLayout>

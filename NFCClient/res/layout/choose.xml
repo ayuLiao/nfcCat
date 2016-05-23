@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ffffff" >
+    
+<RelativeLayout 
+    android:id="@+id/one"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageButton 
+        android:id="@+id/image_NFC"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/nfc2"
+        android:background="#00000000"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nfc识别"
+        android:layout_below="@+id/image_NFC"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        />
+    </RelativeLayout>
+    
+<RelativeLayout 
+    android:id="@+id/two"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/one"
+    >
+    <ImageButton 
+        android:id="@+id/image_QR"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/qr2"
+        android:layout_marginTop="50sp"
+         android:background="#00000000"
+        /><TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫一扫"
+        android:layout_below="@+id/image_QR"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+</RelativeLayout>

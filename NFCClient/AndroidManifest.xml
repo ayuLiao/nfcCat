@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liao.nfcclient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cat"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.liao.nfcclient.FirstActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:configChanges="orientation|screenSize"
+             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.liao.nfcclient.Login"
+            android:configChanges="orientation|screenSize"
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.liao.nfcclient.registration"
+            android:configChanges="orientation|screenSize"
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.liao.nfcclient.MainActivity"
+            android:configChanges="orientation|screenSize"
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.liao.nfcread.choose"
+            android:configChanges="orientation|screenSize"
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.liao.nfcread.ReadNFC"
+            android:configChanges="orientation|screenSize"
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.liao.nfcread.show"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize"
+             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.liao.WatchInformation.LateTime" 
+            android:configChanges="orientation|screenSize"
+             android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|screenSize"
+             android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.liao.WatchInformation.LateTime_all" >
+        </activity>
+        <activity android:name="com.liao.time.MyCount"
+            android:configChanges="orientation|screenSize"
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.liao.time.AddTime"
+            android:configChanges="orientation|screenSize"
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.liao.person.person"
+            android:configChanges="orientation|screenSize"
+             android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

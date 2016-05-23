@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/top1_bg"
+    >
+    <TextView 
+        android:id="@+id/time_add_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="添加时间范围"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        />
+    
+    <Button 
+        android:id="@+id/time_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="添加"
+        android:textSize="20sp"
+        android:background="@drawable/button_type1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        />
+</RelativeLayout>
+
+<com.liao.custom.MyEditText
+    android:id="@+id/time_add_editText"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="25sp"
+    android:hint="时间(单位：秒)"
+    android:background="@null"
+    />
+    
+</LinearLayout>
